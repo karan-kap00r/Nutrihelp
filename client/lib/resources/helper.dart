@@ -39,7 +39,7 @@ Widget template({Widget body}) {
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: [Color(0xffA6E97C), Color(0xffF4F4F4)])),
+              colors: [Color(0xFF4FC3F7), Color(0xFFE1F5FE)])),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.transparent,
@@ -60,7 +60,7 @@ IconButton newIconButton(
         padding: const EdgeInsets.only(left: 5, right: 10),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50),
-            border: Border.all(color: const Color(0xff05483f))),
+            border: Border.all(color: const Color(0xFF01579B))),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -72,6 +72,6 @@ IconButton newIconButton(
                 style: GoogleFonts.poppins(fontSize: deviceWidth * 0.05))
           ],
         )),
-    color: const Color(0xff05483f),
+    color: const Color(0xFF01579B),
   );
 }

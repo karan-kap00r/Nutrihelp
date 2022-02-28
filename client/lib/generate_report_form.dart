@@ -44,7 +44,7 @@ class _GenerateReportFormState extends State<GenerateReportForm> {
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: [Color(0xffA6E97C), Color(0xffF4F4F4)])),
+              colors: [Color(0xFF4FC3F7), Color(0xFFE1F5FE)])),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.transparent,
@@ -570,7 +570,7 @@ class _GenerateReportFormState extends State<GenerateReportForm> {
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(15)),
                                 ),
-                                backgroundColor: const Color(0xff05483F),
+                                backgroundColor: const Color(0xFF01579B),
                               ),
                               child: Text('Generate',
                                   style:

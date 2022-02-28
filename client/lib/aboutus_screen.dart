@@ -8,18 +8,18 @@ class AboutUsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final double deviceWidth = MediaQuery.of(context).size.width;
     final double deviceHeight = MediaQuery.of(context).size.height;
-    const green = Color(0xff05483f);
+    const blue = Color(0xFF01579B);
     SizedBox hsb(val) => SizedBox(height: deviceHeight * val);
     Text h1Text(val) => Text(val,
-        style: GoogleFonts.poppins(fontSize: deviceWidth * 0.08, color: green));
+        style: GoogleFonts.poppins(fontSize: deviceWidth * 0.08, color: blue));
     Text h2Text(val) => Text(val,
         style: GoogleFonts.poppins(
             fontSize: deviceWidth * 0.043,
-            color: green,
+            color: blue,
             fontWeight: FontWeight.w600));
     Text h3Text(val) => Text(val,
         style: GoogleFonts.poppins(
-            fontSize: deviceWidth * 0.04, color: green, letterSpacing: 1));
+            fontSize: deviceWidth * 0.04, color: blue, letterSpacing: 1));
     final _linkedInUrls = <String, String>{
       'MOHIT': 'https://www.linkedin.com/in/mohit-kushwaha/',
       'ASHUTOSH': 'https://www.linkedin.com/in/ashutosh-sahu-0623b217a/',
@@ -52,7 +52,7 @@ class AboutUsScreen extends StatelessWidget {
               onTap: () => _visitUrl(linkedinUrl),
               child: const FaIcon(
                 FontAwesomeIcons.linkedin,
-                color: green,
+                color: blue,
               ),
             ),
             SizedBox(width: deviceWidth * 0.02),
@@ -60,7 +60,7 @@ class AboutUsScreen extends StatelessWidget {
                 onTap: () => _visitUrl(githubUrl),
                 child: const FaIcon(
                   FontAwesomeIcons.githubSquare,
-                  color: green,
+                  color: blue,
                 )),
             const Expanded(child: SizedBox()),
           ])
